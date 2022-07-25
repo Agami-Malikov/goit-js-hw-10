@@ -24,8 +24,9 @@ function onCountrySearchInput() {
         );
       } else if (countries.length >= 2 && countries.length <= 10) {
         onRenderCountries(countries);
+      } else {
+        onRenderCountry(countries);
       }
-      onRenderCountry(countries);
     })
     .catch(() => {
       Notiflix.Notify.failure('Oops, there is no country with that name');
