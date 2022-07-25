@@ -28,7 +28,7 @@ function onCountrySearchInput() {
       onRenderCountry(countries);
     })
     .catch(() => {
-      Notiflix.Notify.failure('Oopsie, there is no country with that name ');
+      Notiflix.Notify.failure('Oops, there is no country with that name');
     });
 }
 
